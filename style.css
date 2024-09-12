@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg.jpeg'); /* Add your background image URL here */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.stopwatch-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjusted width to fit buttons side by side */
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px; /* Space between the display and buttons */
+    color: #333;
+    padding: 10px;
+    border: 2px solid black; /* Black border around the timer */
+    border-radius: 5px;
+    background-color: #e0e0e0; /* Light gray background for contrast */
+    width: 100%; /* Make display width responsive to the container */
+    text-align: center; /* Center the text inside the display */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space buttons evenly */
+    width: 100%; /* Make button container width responsive to the stopwatch-box */
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4cafa0;
+    color: white;
+    cursor: pointer;
+    flex: 1; /* Allow buttons to grow and fill the space equally */
+    max-width: 100px; /* Optional: limit button width */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
